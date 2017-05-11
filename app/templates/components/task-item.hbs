@@ -26,7 +26,7 @@
             {{input value=worktime placeholder="x weeks/months" class="form-control"}}
         </div>
         <div class="text-center">
-          <button class="button-primary button-large" {{action "sendRequest"}}>Send Volunteer Request</button>
+          <button id={{item.id}} class="button-primary button-large" {{action "sendRequest" item.title item.id}}>Send Volunteer Request</button>
         </div>
       </div>
     </div>

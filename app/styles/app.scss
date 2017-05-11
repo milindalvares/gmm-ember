@@ -1,0 +1,182 @@
+@import 'skeleton';
+
+$font: "PT Sans", sans-serif;
+$fontTitle: "PT Sans Narrow", sans-serif;
+
+$dark: #524A42;
+$green: #D4E026;
+$brown: #7F5E42;
+
+body {
+  font-family: $font;
+  color: $dark;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $fontTitle;
+}
+
+#logo {
+  background: url('/images/gmm-logo.png') no-repeat;
+  width: 169px;
+  height: 168px;
+  margin: 50px auto;
+  text-indent: -9999px;
+}
+
+.intro {
+  text-align: center;
+  background: #FFFFF5;
+  border-top: 1px solid #EDE5DE;
+  border-bottom: 1px solid #EDE5DE;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h3 {
+    color: $green;
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .container {
+    max-width: 480px;
+  }
+}
+
+.container {
+  max-width: 750px;
+}
+
+#tasks-list {
+  margin-top: 25px;
+  li {
+    list-style: none;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  h4 {
+    color: $brown;
+    font-family: $font;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-size: 24px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  p.description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  p.additional {
+    font-size: 14px;
+    color: #9B9B9B;
+  }
+  .form {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    button {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .form-group {
+    margin-bottom: 10px;
+    span {
+      display: inline-block;
+      color: $brown;
+    }
+    input {
+      display: inline-block;
+    }
+    .form-control {
+      color: $brown;
+    }
+  }
+  button.button-hand {
+      margin: 0 auto;
+  }
+  @media (max-width: 500px) {
+    button.button-hand {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+input.form-control, textarea.form-control {
+  padding: 0 5px 5px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #E5DFD9;
+  background: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: darken(#E5DFD9, 10%);
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight: normal;
+  color: transparentize($brown, 0.4);
+}
+
+button.button-primary {
+  background: $green;
+  color: $brown;
+}
+
+button.button-large {
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 0;
+  border-color: $brown;
+  height: auto;
+}
+
+button.button-hand {
+  background: url('/images/hand-icon.png') center top no-repeat;
+  background-color: transparent;
+  background-size: 55px 61px;
+  height: 95px;
+  color: $dark;
+  border: none;
+  padding-top: 60px;
+  display: block;
+  &:hover, &:active, &:focus {
+    background-color: transparent;
+    background-size: 59px 64px;
+    color: $brown;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 0 5%;
+  p {
+    color: #9B9B9B;
+    font-size: 13px;
+  }
+}
+
+
+#new-task, .task-form {
+  background: #FFFFF5;
+  border: 1px solid #EDE5DE;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+}

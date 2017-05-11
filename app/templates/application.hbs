@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div id="main">
+  <h1 id="logo">Goenchi Mati Movement</h1>
+  <div class="intro">
+    <div class="container">
+      <h3>We Need You</h3>
+      <p>
+        Goenchi Mati Movement functions on the basis of teams of individual volunteers working during whatever time they can spare to push the movement forward and wide. Review the tasks below to find a task you can handle.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    {{outlet}}
+  </div>
+  <div class="footer">
+    <p>Developed with 💖  &nbsp;for Goa by <a href="http://hashcooki.es/">hash cookies</a>.</p>
+  </div>
+</div>
